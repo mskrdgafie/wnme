@@ -25,7 +25,7 @@ SECRET_KEY = 'aq1s$4wizsmj!+fvlr$gl7%a9w=g(j9#5mo*dlc@(@^r5g=lf9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.43.156', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['192.168.43.222', '127.0.0.1', 'localhost', '0.0.0.0r']
 
 
 # Application definition
@@ -48,8 +48,9 @@ INSTALLED_APPS = [
     # third party app
     'rest_framework',
     'rest_framework.authtoken', # use this for token authentication
-    'oauth2_provider',
-    'rest_framework_social_oauth2',
+
+    'admin_interface',
+    'colorfield',
 ]
 
 MIDDLEWARE = [
@@ -131,6 +132,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 
 REST_FRAMEWORK = {
@@ -147,3 +149,5 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',#set paginaion to all views include  ex ?page=2 in url
     'PAGE_SIZE': 2,
 }
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'

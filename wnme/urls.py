@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+admin.site.site_header='WNME Admin'
+admin.site.site_title='WNME Admin Portal'
+admin.site.index_title='Welcome to WNME Admin Portal'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
