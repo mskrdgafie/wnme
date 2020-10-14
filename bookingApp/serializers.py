@@ -50,7 +50,6 @@ class JobSerializer(serializers.ModelSerializer):
 
 class ServiceProviderSerializer(serializers.ModelSerializer):
 	jobs_set = JobSerializer(many=True, read_only=False)
-	location_set = LocationSerializer(many=True, read_only=True)
 
 	class Meta:
 		model = models.ServiceProvider
@@ -61,7 +60,7 @@ class ServiceProviderSerializer(serializers.ModelSerializer):
 			'phone', 
 			'gender', 
 			'workingRadius',
-			'location_set',
+			'location',
 			'jobs_set',
 		)
 
