@@ -1,0 +1,34 @@
+api lists with what they do
+
+/
+    admin/      for administration of site
+    api-auth/   for  user authentication
+    api/v2/booking/ for booking service
+    api/v2/account/ to login, create accoutnt 
+    api/v2/chat/  from chat user interface       # chat is working without authentication why?
+    api/v2/rating/ for rating interface
+
+
+chat
+ api/v2/chat/
+
+rating
+ api/v2/rating/
+
+account
+ api/v2/account/login              To login to the system.
+ api/v2/account/user               get user lists.
+
+booking
+  api/v2/booking/ main/                              service_provider_list
+  api/v2/booking/ main/<int:pk>/                     service_provider_detail
+  api/v2/booking/ main/customer/                     customer_list
+  api/v2/booking/ main/customer/<int:pk>/            customer_detail
+  api/v2/booking/ main/job/                          job_list
+  api/v2/booking/ main/job/<int:pk>/                 job_detail
+  api/v2/booking/ main/order/                        order_list
+  api/v2/booking/ main/order/<int:pk>/               order_detail
+  api/v2/booking/ main/order-detail/                 order_detail_list
+  api/v2/booking/ main/order-detail/<int:pk>/        order_detail_detail
+  api/v2/booking/ main/service/                      service_list
+  api/v2/booking/ main/subservice/                   sub_service_list
