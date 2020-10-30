@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-import dj_database_url
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -27,7 +26,7 @@ SECRET_KEY = 'aq1s$4wizsmj!+fvlr$gl7%a9w=g(j9#5mo*dlc@(@^r5g=lf9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.43.222', '127.0.0.1', 'localhost', '0.0.0.0r', 'wnme.herokuapp.com']
+ALLOWED_HOSTS = ['wnme.herokuapp.com']
 
 
 # Application definition
@@ -151,5 +150,3 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',#set paginaion to all views include  ex ?page=2 in url
     'PAGE_SIZE': 2,
 }
-
-X_FRAME_OPTIONS = 'SAMEORIGIN'
