@@ -110,10 +110,8 @@ WSGI_APPLICATION = 'wnme.wsgi.application'
 
 #use this when using heroku
 
-# DATABASES = {}
-# DATABASES['default'] = dj_database_url.config(conn_max_age=600)
-
-DATABASES['default']['ATOMIC_REQUESTS'] = True
+DATABASES = {}
+DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 DATABASES['default']['ENGINE'] = "django.contrib.gis.db.backends.postgis"
 
 # use this for local developmet
