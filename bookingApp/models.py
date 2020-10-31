@@ -6,7 +6,7 @@ from django.conf import settings
 
 
 class Location(models.Model):
-    location = models.PointField()
+    lat_lng= models.PointField()
     houseNo = models.CharField(max_length=100)
     description = models.CharField(max_length=200)
 
