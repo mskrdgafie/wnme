@@ -110,20 +110,20 @@ WSGI_APPLICATION = 'wnme.wsgi.application'
 
 #use this when using heroku
 
-# DATABASES = {}
-# DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+DATABASES = {}
+DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 
 # use this for local developmet
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'wnme',
-        'USER': 'misiker',
-        'PASSWORD': '',
-        'PORT': '5432',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.contrib.gis.db.backends.postgis',
+#         'NAME': 'wnme',
+#         'USER': 'misiker',
+#         'PASSWORD': '',
+#         'PORT': '5432',
+#     }
+# }
 
 
 # Password validation
