@@ -26,13 +26,11 @@ class SubServiceSerializer(serializers.ModelSerializer):
 			'subServiceTitle',
 		)
 
-
 class LocationSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = models.Location
 		fields = (
-			'lat',
-			'lng',
+			'location',
 			'houseNo',
 			'description',
 		)

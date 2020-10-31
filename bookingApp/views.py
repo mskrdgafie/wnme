@@ -7,6 +7,9 @@ from rest_framework import status
 from . import models
 from . import serializers
 
+from django.contrib.gis.geos import fromstr
+from django.contrib.gis.db.models.functions import Distance
+
 # Create your views here.
 
 

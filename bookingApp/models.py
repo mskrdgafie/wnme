@@ -1,13 +1,12 @@
 from datetime import timezone
 
-from django.db import models
+from django.contrib.gis.db import models
 from django.conf import settings
 
 
-# Create your models here.
+
 class Location(models.Model):
-    lat = models.DecimalField(decimal_places=4, max_digits=20)
-    lng = models.DecimalField(decimal_places=10, max_digits=20)
+    location = models.PointField()
     houseNo = models.CharField(max_length=100)
     description = models.CharField(max_length=200)
 
