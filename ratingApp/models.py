@@ -2,7 +2,6 @@ from django.db import models
 from bookingApp.models import Order, Customer, ServiceProvider
 
 # Create your models here.
-
 class Rating(models.Model):
     RATER_CHOICES = (
         ('customer', 'Customer'),

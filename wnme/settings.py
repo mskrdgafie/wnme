@@ -189,3 +189,6 @@ options = DATABASES['default'].get('OPTIONS', {})
 options.pop('sslmode', None)
 
 YENEPAY_SANDBOX = 'https://testapi.yenepay.com/api/urlgenerate/getcheckouturl/'
+
+GDAL_LIBRARY_PATH = os.environ.get('GDAL_LIBRARY_PATH')
+GEOS_LIBRARY_PATH = os.environ.get('GEOS_LIBRARY_PATH')
