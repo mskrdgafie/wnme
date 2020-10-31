@@ -30,7 +30,7 @@ class LocationSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = models.Location
 		fields = (
-			'location',
+			'lat_lng',
 			'houseNo',
 			'description',
 		)

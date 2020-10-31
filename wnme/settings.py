@@ -34,7 +34,7 @@ SECRET_KEY = 'aq1s$4wizsmj!+fvlr$gl7%a9w=g(j9#5mo*dlc@(@^r5g=lf9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['wnme.herokuapp.com']
+ALLOWED_HOSTS = ['wnme.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -107,13 +107,6 @@ WSGI_APPLICATION = 'wnme.wsgi.application'
 #     }
 # }
 
-
-#use this when using heroku
-
-# DATABASES = {}
-# DATABASES['default'] = dj_database_url.config(conn_max_age=600)
-
-# use this for local developmet
 
 # DATABASES = {
 #     'default': {
