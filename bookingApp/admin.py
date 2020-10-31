@@ -6,7 +6,7 @@ from . import models
 
 @admin.register(models.Location)
 class LocationAdmin(OSMGeoAdmin):
-    list_display = ('location', 'houseNo', 'description')
+    list_display = ('lat_lng', 'houseNo', 'description')
 
 admin.site.register(models.ServiceProvider)
 admin.site.register(models.Customer)
