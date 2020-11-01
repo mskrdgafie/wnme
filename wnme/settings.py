@@ -108,26 +108,26 @@ WSGI_APPLICATION = 'wnme.wsgi.application'
 # }
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-#         'NAME': 'wnme',
-#         'USER': 'misiker',
-#         'PASSWORD': '',
-#         'PORT': '5432',
-#     }
-# }
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'd9cv15b0frrsd3',
-        'USER': 'bmeazkrerhpmgh',
-        'PASSWORD': 'aa30d5d9cb9d710989628e423cd0181090497562fb82fedfe34736f5cdc664bc',
+        'NAME': 'wnme',
+        'USER': 'misiker',
+        'PASSWORD': '',
         'PORT': '5432',
-        'HOST':'ec2-54-157-88-70.compute-1.amazonaws.com',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.contrib.gis.db.backends.postgis',
+#         'NAME': 'd9cv15b0frrsd3',
+#         'USER': 'bmeazkrerhpmgh',
+#         'PASSWORD': 'aa30d5d9cb9d710989628e423cd0181090497562fb82fedfe34736f5cdc664bc',
+#         'PORT': '5432',
+#         'HOST':'ec2-54-157-88-70.compute-1.amazonaws.com',
+#     }
+# }
 
 
 # Password validation
