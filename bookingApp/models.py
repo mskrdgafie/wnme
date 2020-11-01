@@ -9,7 +9,6 @@ class Location(models.Model):
     lat_lng= models.PointField()
     houseNo = models.CharField(max_length=100)
     description = models.CharField(max_length=200)
-    postal = models.CharField(max_length=100, default='')
 
 
 class ServiceProvider(models.Model):
