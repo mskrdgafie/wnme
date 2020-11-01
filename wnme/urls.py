@@ -21,10 +21,11 @@ admin.site.site_title='WNME Admin Portal'
 admin.site.index_title='Welcome to WNME Admin Portal'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('wnme/admin/', admin.site.urls),
+    # path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('api/v2/booking/', include('bookingApp.urls', namespace='bookingApp')),
 	path('api/v2/account/', include('accountApp.urls', namespace='accountApp')),
     path('api/v2/chat/', include('chatApp.urls', namespace='chatApp')),
 	path('api/v2/rating/', include('ratingApp.urls', namespace='ratingApp')),
+    path('api/v2/payment/', include('paymentApp.urls', namespace='paymentApp')),
 ]
