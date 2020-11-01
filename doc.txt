@@ -1,3 +1,19 @@
+yene pay result
+
+http://localhost:8000/api/v2/pay-success/?
+TotalAmount=472.30
+&BuyerId=6aa7d8dc-9b7f-4c6c-adc7-99c3c52fcc8b
+&MerchantOrderId=kajhk-kjh
+&MerchantCode=0749
+&MerchantId=280e0dee-b1e9-4a1f-97fa-2255f6cc5255
+&TransactionCode=UMNQPWNE
+&TransactionId=6b3ecaeb-223a-43d4-9bfd-b51eed124151
+&Status=Paid
+&Currency=ETB
+&Signature=gtUlnsP6uCyCLx6zc3DyDKrH0GDaLHnWPjkJYJ031guXSKxBhqmxbOnV0rqvP1sxYfGz8F1uKfE3l5kw2pddSmWAj7GedbjgxQXr3CEH+jrKvXIoobkHRNLcCMUf9ieC6p5Ck1qm7uf2AwfVfvkJDJdTGGW3iPv6kxbq2cgPtVtmUOcieBKlo/mw7DVlJkgkm9T++pUCOJPfnzzHc60baCr/oAuM1ClDwaAGsakCH3XET5G0c11S0QENHL4lPmQninTSHrmPrczd9amT6LyOpXV884kRXJ3UD5uY2ILfduxPlqr+1M9otMddS/XJsb0OIM+dYvdS5NqotnDJXlA6Ww==
+
+
+
 account login and sign up for cusomter and service procider is not working.
 chat is not asyn.
 
