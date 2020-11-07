@@ -6,6 +6,7 @@ from django.conf import settings
 
 
 class Location(models.Model):
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     lat_lng= models.PointField()
     houseNo = models.CharField(max_length=100)
     description = models.CharField(max_length=200)
@@ -27,7 +28,7 @@ class ServiceProvider(models.Model):
     phone = models.CharField(max_length=100)
     gender = models.CharField(max_length=10, choices=GENDER, default='')
     workingRadius = models.IntegerField()
-    location = models.ForeignKey(Location, on_delete=models.CASCADE)
+    lat_lng= models.PointField()
 
     def __str__(self):
         return '{}'.format(self.user.username)
@@ -48,7 +49,6 @@ class Customer(models.Model):
     is_online = models.CharField(max_length=100, choices=IS_ONLINE, default='offline')
     phone = models.CharField(max_length=100)
     gender = models.CharField(max_length=10, choices=GENDER, default='')
-    location = models.ForeignKey(Location, on_delete=models.CASCADE)
 
     def __str__(self):
         return '{}'.format(self.user.username)

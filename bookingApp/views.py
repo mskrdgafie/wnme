@@ -7,15 +7,18 @@ from rest_framework import status
 from . import models
 from . import serializers
 
-from django.contrib.gis.geos import fromstr
+from django.contrib.gis.geos import fromstr, Point
 from django.contrib.gis.db.models.functions import Distance
 
 # Create your views here.
+longitude = -80.191788
+latitude = 25.761681
 
+user_location = Point(longitude, latitude, srid=4326)
 
 # service provider
 class ListCreateServiceProvider(generics.ListCreateAPIView):
-	queryset = models.ServiceProvider.objects.all()
+	queryset = models.ServiceProvider.objects.annotate(distance=Distance('lat_lng', user_location)).order_by('distance')
 	serializer_class = serializers.ServiceProviderSerializer
 
 class RetrieveUpdateDestroyServiceProvider(generics.RetrieveUpdateDestroyAPIView):

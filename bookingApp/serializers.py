@@ -58,21 +58,19 @@ class ServiceProviderSerializer(serializers.ModelSerializer):
 			'phone', 
 			'gender', 
 			'workingRadius',
-			'location',
+			'lat_lng',
 			'jobs_set',
 		)
 
 class CustomerSerializer(serializers.ModelSerializer):
-	user_set = UserSerializer(many=True, read_only=False)
 	class Meta:
 		model = models.Customer
 		fields=(
-			'user_set',
+			'user',
 			'photo',
 			'is_online',
 			'phone',
 			'gender',
-			'location',
 		)
 
 

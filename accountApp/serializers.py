@@ -21,12 +21,16 @@ class UserSerializer(serializers.ModelSerializer):
 		Token.objects.create(user=user)
 		
 		my_redirect_http="https://wnme.herokuapp.com/confirm-email2"
+
         #send email.
 		m = Mailin("https://api.sendinblue.com/v2.0","PpVLAJgjn0mqcW2b")
-		data = { "to" : {"mskrdgafie@gmail.com":"Misiker"},
-		"from" : ["wnme@gmail.com", "WNME"],"subject" : "confirm your email",
-		"html" : "<h1>Confirm your wnme account</h1><p>Thank you for registering on <h3>WNME<h3>Please confirm your email <a href='" + (my_redirect_http) + "'>here2</a></p>"}
+		to = "mskrdgafie@gmail.com"
+		user = "Misiker"
+		# print("$$$$$$$$$$$$$$$$$", validated_data['username'])
+		data = { "to" : {to:user},
+		"from" : ["wnme@gmail.com", "WNME"],"subject" : "confirm your email.",
+		"html" : "<h1>Confirm your wnme account</h1><p>Thank you for registering on <h3>WNME<h3>Please confirm your email <a href='" + (my_redirect_http) + "'>here</a></p>"}
 
 		result = m.send_email(data)
-		# print(result)
+		print(result)
 		return user
