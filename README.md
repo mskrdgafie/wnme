@@ -5,7 +5,7 @@ WNME is a system which helps customers find workers near them easly. This repo i
 @Misiker
 @Yohannes
 ### Features progress to achive it's goal:
-> * :soccer::goal_net::heavy_multiplication_x::backetball_man: booking
+> * :soccer::goal_net::heavy_minus_sign::running_man: booking
 > * [] payment
 > * [] chat
 > * [] rating
