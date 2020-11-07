@@ -5,11 +5,11 @@ WNME is a system which helps customers find workers near them easly. This repo i
 @Misiker
 @Yohannes
 ### Features progress to achive it's goal:
-> * :soccer::goal_net::heavy_minus_sign::running_man: booking
-> * [] payment
-> * [] chat
-> * [] rating
-> * [] account
+> * :goal_net::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::soccer::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::running_man:booking
+> * :goal_net::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::soccer::heavy_minus_sign::running_man:payment
+> * :goal_net::soccer::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::running_man:chat
+> * :goal_net::soccer::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::running_man:rating
+> * :goal_net::heavy_minus_sign::soccer::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::running_man: account
 ### you can preview wnme <a href="wnme.herokuapp.com">here</a>
 
 Path                  | Description
