@@ -5,11 +5,11 @@ WNME is a system which helps customers find workers near them easly. This repo i
 @Misiker
 @Yohannes
 ### Features:
-> * [x] booking
-> * [x] payment
+> * [] booking
+> * [] payment
 > * [] chat
-> * rating
-> * account
+> * [] rating
+> * [] account
 ### you can preview wnme <a href="wnme.herokuapp.com">here</a>
 
 Path                  | Description
