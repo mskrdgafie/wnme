@@ -1,16 +1,18 @@
 # WNME :ethiopia:
 
-WNME is a system which helps customers find workers near them easly. This repo is backend part which is implemented using django RestFull api.
+WNME is a system which helps customers find workers near them easly. This repo is backend part which is implemented using django RESTfull API.
 ### Teams:
 @Misiker
 @Yohannes
+@Abrham
+@Ruhama
 ### Features progress to achive it's goal:
 > * :goal_net::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::soccer::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::running_man:booking
 > * :goal_net::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::soccer::heavy_minus_sign::running_man:payment
 > * :goal_net::soccer::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::running_man:chat
 > * :goal_net::soccer::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::running_man:rating
-> * :goal_net::heavy_minus_sign::soccer::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::running_man: account
-### you can preview wnme <a href="wnme.herokuapp.com">here</a>
+> * :goal_net::heavy_minus_sign::soccer::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::heavy_minus_sign::running_man: account managment
+### you can preview wnme <a href="https://wnme.herokuapp.com/">here</a>
 
 Path                  | Description
 ----------------------|--------------------------------
