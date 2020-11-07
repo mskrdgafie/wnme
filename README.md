@@ -1,11 +1,11 @@
-# WNME
+# WNME :ethiopia:
 
 WNME is a system which helps customers find workers near them easly. This repo is backend part which is implemented using django RestFull api.
 ### Teams:
 @Misiker
 @Yohannes
-### Features:
-> * [] booking
+### Features progress to achive it's goal:
+> * :soccer::goal_net::heavy_multiplication_x::backetball_man: booking
 > * [] payment
 > * [] chat
 > * [] rating
@@ -21,7 +21,7 @@ api/v2/chat           | used to chat
 api/v2/payment        | used for online payment
 
 ## Technologies used in this system are :
-* react for web frontend which is found <a href="https://github.com/mskrdgafie/wnme">here</a>
+* react for web frontend which is found <a href="https://github.com/mskrdgafie/wnme_front_end">here</a>
 * django for backend :sparkles:
 * flutter for mobile frontend which is found <a href="">here</a>
 * postgresql with PostGIS extension
@@ -33,19 +33,19 @@ api/v2/payment        | used for online payment
 * google social authentication
 
 To run the backend, run:
-''' python
+``` python
 virtualenv env
 source env/bin/activate
 pip install -r requirements.txt
 python manage.py runserver
-'''
+```
    
 
 To run the web frontend:
-''' javascript 
+``` javascript 
 npm i
 npm start
-'''
+```
 
 :+1:
 
